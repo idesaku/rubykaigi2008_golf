@@ -1,6 +1,3 @@
-a,b,c=STDIN.read.split(/:/)
-x = b.to_i
-puts x
-(1...a.to_i).each{
-  puts x = (x * (1.0+c.to_f/100)).to_i
-}
+a,b,c=STDIN.read.split(/:/).map{|s|s.to_i}
+puts b
+a.times{puts b=(b*(1.0+c.to_f/100)).to_i}
