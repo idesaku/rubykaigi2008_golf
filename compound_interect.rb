@@ -1,3 +1,2 @@
 a,b,c=gets.split(/:/).map{|s|s.to_i}
-a.times{puts b
-b+=b*c/100}
+a.times{p b;b+=b*c/?d}
